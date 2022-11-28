@@ -1,7 +1,58 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title> Tab 1 </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-img
+      alt="André Maia"
+      class="img"
+      src="../../assets/images/IMG_5148.jpg"
+    ></ion-img>
+    <ion-card-header>
+      <ion-card-title>André Maia</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-card-subtitle
+        ><ion-icon name="desktop"></ion-icon>&nbsp;&nbsp;&nbsp; Web
+        Developer</ion-card-subtitle
+      >
+      <ion-card-subtitle>
+        <ion-icon name="location"></ion-icon>&nbsp;&nbsp;&nbsp; Póvoa de
+        Varzim</ion-card-subtitle
+      >
+    </ion-card-content>
+    <ion-card-content class="ion-text-center">
+      <ion-row class="">
+        <ion-col size="4" class="ion-text-left">
+          <ion-button
+            color="dark"
+            size="large"
+            href="https://github.com/AndreMaia95"
+            target="_blank"
+            ><ion-icon name="logo-github"></ion-icon
+          ></ion-button>
+        </ion-col>
 
-<ion-content [fullscreen]="true"> </ion-content>
+        <ion-col size="4">
+          <ion-button
+            color="dark"
+            size="large"
+            href="https://twitter.com/AMaia098"
+            target="_blank"
+            ><ion-icon name="logo-twitter"></ion-icon
+          ></ion-button>
+        </ion-col>
+
+        <ion-col size="4" class="ion-text-right">
+          <ion-button
+            color="dark"
+            size="large"
+            href="https://www.linkedin.com/in/andr%C3%A9-maia-3b2b84221/"
+            target="_blank"
+            ><ion-icon name="logo-linkedin"></ion-icon
+          ></ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-button size="large" expand="block" color="dark"
+        >More Information</ion-button
+      >
+    </ion-card-content>
+  </ion-card>
+</ion-content>
