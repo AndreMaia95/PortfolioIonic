@@ -10,3 +10,16 @@ ion-img::part(image) {
 .infobtn {
   margin-top: 30px;
 }
+
+.avatar-me {
+  position: absolute;
+  top: 470px;
+  left: 65vw;
+  width: 70px !important;
+  height: 70px !important;
+}
+
+ion-col > ion-button {
+  width: 70px;
+  height: 70px;
+}
