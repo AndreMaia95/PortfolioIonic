@@ -1,7 +1,71 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title> Tab 2 </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons>
+        <ion-button color="dark" href="#" cursor="pointer"
+          ><ion-icon name="chevron-back"></ion-icon
+        ></ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
 
-<ion-content [fullscreen]="true"> </ion-content>
+  <ion-row>
+    <ion-col size="6" class="ion-text-center">
+      <ion-text><h1>André Maia</h1></ion-text>
+    </ion-col>
+    <ion-col size="6" class="ion-text-center ion-padding-top">
+      <ion-button color="dark" href="#" cursor="pointer" shape="round">
+        <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+      </ion-button>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col size="6" class="ion-text-center"
+      ><ion-card
+        ><ion-card-content
+          ><ion-button
+            class="snakecss"
+            expand="block"
+            color="light"
+            cursor="pointer"
+            (click)="setOpen(true)"
+            >SnakeGame</ion-button
+          >
+          <ion-modal [isOpen]="isModalOpen">
+            <ng-template>
+              <ion-header>
+                <ion-toolbar>
+                  <ion-title>SnakeGame</ion-title>
+                  <ion-buttons slot="end">
+                    <ion-button (click)="setOpen(false)">Close</ion-button>
+                  </ion-buttons>
+                </ion-toolbar>
+              </ion-header>
+              <ion-content class="ion-padding">
+                <p>Projeto1</p>
+              </ion-content>
+            </ng-template>
+          </ion-modal></ion-card-content
+        ></ion-card
+      ></ion-col
+    >
+    <ion-col size="6" class="ion-text-center"
+      ><ion-card
+        ><ion-card-content>Projetos2</ion-card-content></ion-card
+      ></ion-col
+    >
+  </ion-row>
+  <ion-row>
+    <ion-col size="6" class="ion-text-center"
+      ><ion-card
+        ><ion-card-content>Projetos3</ion-card-content></ion-card
+      ></ion-col
+    >
+    <ion-col size="6" class="ion-text-center"
+      ><ion-card
+        ><ion-card-content>Projetos4</ion-card-content></ion-card
+      ></ion-col
+    >
+  </ion-row>
+</ion-content>
