@@ -1,7 +1,93 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title> Tab 3 </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons>
+        <ion-button color="dark" href="#" cursor="pointer"
+          ><ion-icon name="chevron-back"></ion-icon
+        ></ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  <ion-row>
+    <ion-col class="ion-text-center">
+      <ion-text
+        ><h1><b>Contact Me</b></h1></ion-text
+      >
+    </ion-col>
+  </ion-row>
+  <ion-card-content>
+    <div>
+      <ion-item class="ion-margin-top ion-margin-bottom">
+        <ion-label position="stacked">Name:</ion-label>
+        <ion-input placeholder="Your Name"></ion-input>
+      </ion-item>
+    </div>
+    <div>
+      <ion-item class="ion-margin-top ion-margin-bottom">
+        <ion-label position="stacked">Email:</ion-label>
+        <ion-input placeholder="Your Email"></ion-input>
+      </ion-item>
+    </div>
+    <div>
+      <ion-item class="ion-margin-top ion-margin-bottom">
+        <ion-label position="stacked">Message:</ion-label>
+        <ion-textarea
+          rows="5"
+          placeholder="Your Message:"
+          [clearOnEdit]="true"
+        ></ion-textarea>
+      </ion-item>
+    </div>
+  </ion-card-content>
+  <ion-card-content class="ion-text-center"
+    ><ion-row
+      ><ion-col
+        ><ion-button
+          size="large"
+          expand="block"
+          color="dark"
+          class="infobtn"
+          href="#"
+          >Send Message</ion-button
+        ></ion-col
+      ></ion-row
+    ></ion-card-content
+  >
+  <div class="devidercss"></div>
+  <ion-card-content class="ion-text-center">
+    <ion-row>
+      <ion-col size="4" class="ion-text-left">
+        <ion-button
+          color="dark"
+          size="large"
+          cursor="pointer"
+          href="https://github.com/AndreMaia95"
+          target="_blank"
+          ><ion-icon name="logo-github"></ion-icon
+        ></ion-button>
+      </ion-col>
 
-<ion-content [fullscreen]="true"> </ion-content>
+      <ion-col size="4">
+        <ion-button
+          color="dark"
+          size="large"
+          cursor="pointer"
+          href="https://twitter.com/AMaia098"
+          target="_blank"
+          ><ion-icon name="logo-twitter"></ion-icon
+        ></ion-button>
+      </ion-col>
+
+      <ion-col size="4" class="ion-text-right">
+        <ion-button
+          color="dark"
+          size="large"
+          cursor="pointer"
+          href="https://www.linkedin.com/in/andr%C3%A9-maia-3b2b84221/"
+          target="_blank"
+          ><ion-icon name="logo-linkedin"></ion-icon
+        ></ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-card-content>
+</ion-content>
