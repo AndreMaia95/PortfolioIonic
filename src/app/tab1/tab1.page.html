@@ -8,7 +8,7 @@
       src="../../assets/images/IMG_5148.jpg"
     ></ion-img>
     <ion-card-header>
-      <ion-card-title>André Maia</ion-card-title>
+      <ion-card-title>{{ me?.info?.name }}</ion-card-title>
     </ion-card-header>
     <ion-card-content class="ion-margin-horizontal">
       <ion-card-subtitle class="ion-border"
@@ -16,8 +16,8 @@
         'webDeveloper' | translate }}</ion-card-subtitle
       >
       <ion-card-subtitle>
-        <ion-icon name="location"></ion-icon>&nbsp;&nbsp;&nbsp; Póvoa de
-        Varzim</ion-card-subtitle
+        <ion-icon name="location"></ion-icon>&nbsp;&nbsp;&nbsp; {{
+        me?.info?.address }}</ion-card-subtitle
       >
     </ion-card-content>
     <ion-card-content class="ion-text-center">
