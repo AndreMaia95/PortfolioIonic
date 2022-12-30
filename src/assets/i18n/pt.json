@@ -3,5 +3,11 @@
   "close": "Fechar",
   "hello": "Olá",
   "moreInformation": "Mais Informação",
-  "webDeveloper": "Desenvolvedor Web"
+  "webDeveloper": "Desenvolvedor Web",
+  "contactMe": "Contacta-me",
+  "name": "Nome",
+  "yourName": "Nome",
+  "yourEmail": "Email",
+  "yourMessage": "Mensagem",
+  "sendMessage": "Enviar Mensagem"
 }

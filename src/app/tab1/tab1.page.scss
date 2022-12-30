@@ -23,3 +23,29 @@ ion-col > ion-button {
   width: 70px;
   height: 70px;
 }
+
+.translate-btns {
+  width: 130px;
+  position: absolute;
+  left: 70%;
+}
+
+.btn-translate {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.locationicon,
+.developericon {
+  font-size: 20px;
+}
+
+ion-avatar img {
+  background-image: contain;
+}
+
+ion-toggle {
+  position: absolute;
+  top: 33rem  ;
+  left: 19rem;
+}

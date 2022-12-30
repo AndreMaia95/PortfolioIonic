@@ -3,5 +3,11 @@
   "close": "Close",
   "hello": "Hi",
   "moreInformation": "More Information",
-  "webDeveloper": "Web Developer"
+  "webDeveloper": "Web Developer",
+  "contactMe": "Contact Me",
+  "name": "Name",
+  "yourName": "Your Name",
+  "yourEmail": "Your Email",
+  "yourMessage": "Your Message",
+  "sendMessage": "Send Message"
 }

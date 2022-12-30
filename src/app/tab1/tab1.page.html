@@ -1,7 +1,23 @@
 <ion-content [fullscreen]="true">
-  <ion-button (click)="changeLanguage('en')">{{'en'|translate}}</ion-button>
-  <ion-button (click)="changeLanguage('pt')">{{'pt'|translate}}</ion-button>
   <ion-card class="cardcss">
+    <div class="translate-btns">
+      <ion-button
+        fill="clear"
+        color="dark"
+        type="small"
+        class="btn-translate"
+        (click)="changeLanguage('en')"
+        >{{'EN'|translate}}</ion-button
+      >
+      <ion-button
+        fill="clear"
+        color="dark"
+        type="small"
+        class="btn-translate"
+        (click)="changeLanguage('pt')"
+        >{{'PT'|translate}}</ion-button
+      >
+    </div>
     <ion-img
       alt="André Maia"
       class="img"
@@ -12,12 +28,12 @@
     </ion-card-header>
     <ion-card-content class="ion-margin-horizontal">
       <ion-card-subtitle class="ion-border"
-        ><ion-icon name="desktop"></ion-icon>&nbsp;&nbsp;&nbsp; {{
-        'webDeveloper' | translate }}</ion-card-subtitle
+        ><ion-icon class="developericon" name="desktop"></ion-icon
+        >&nbsp;&nbsp;&nbsp; {{ 'webDeveloper' | translate }}</ion-card-subtitle
       >
       <ion-card-subtitle>
-        <ion-icon name="location"></ion-icon>&nbsp;&nbsp;&nbsp; {{
-        me?.info?.address }}</ion-card-subtitle
+        <ion-icon class="locationicon" name="location"></ion-icon
+        >&nbsp;&nbsp;&nbsp; {{ me?.info?.address }}</ion-card-subtitle
       >
     </ion-card-content>
     <ion-card-content class="ion-text-center">
@@ -66,11 +82,5 @@
       </ion-button>
     </ion-card-content>
   </ion-card>
-  <ion-avatar>
-    <img
-      alt="André Maia"
-      class="avatar-me"
-      src="https://ionicframework.com/docs/img/demos/avatar.svg"
-    />
-  </ion-avatar>
+  <ion-toggle color="medium" [enableOnOffLabels]="true"></ion-toggle>
 </ion-content>
