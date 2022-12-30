@@ -39,4 +39,10 @@ export class Tab3Page {
     });
     await toast.present();
   }
+
+  isModalOpen = false;
+
+  setOpen(isOpen: boolean) {
+    this.isModalOpen = isOpen;
+  }
 }
