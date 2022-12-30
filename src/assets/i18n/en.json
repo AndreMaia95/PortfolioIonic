@@ -10,5 +10,6 @@
   "yourName": "Your Name",
   "yourEmail": "Your Email",
   "yourMessage": "Your Message",
-  "sendMessage": "Send Message"
+  "sendMessage": "Send Message",
+  "messageSent": "Message Sent"
 }
