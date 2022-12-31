@@ -18,7 +18,7 @@ ion-card {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   margin-top: 10px;
-  min-height: 200vh;
+  min-height: auto;
   padding: 15px 15px;
 }
 
@@ -62,7 +62,7 @@ ion-card {
 .timeline-dot {
   height: 16px;
   width: 16px;
-  background-color: #eaa023;
+  background-color: #1694a2;
   position: absolute;
   left: calc(50% - 8px);
   border-radius: 50%;
@@ -71,7 +71,7 @@ ion-card {
 
 .timeline-title {
   font-size: 20px;
-  color: #eaa023;
+  color: #1694a2;
   font-weight: bold;
   margin: 6px 0px 15px;
 }
