@@ -12,3 +12,104 @@ ion-card {
 .meTitle {
   margin-top: 1.25rem;
 }
+
+.timeline-section {
+  box-sizing: border-box;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin-top: 10px;
+  min-height: 200vh;
+  padding: 15px 15px;
+}
+
+.timeline-items {
+  max-width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin: auto;
+}
+
+.timeline-items::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: black;
+  left: calc(50% - 1px);
+}
+
+.timeline-item {
+  margin-bottom: 40px;
+  margin-right: 10px;
+  width: 100%;
+  position: relative;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-item:nth-child(odd) {
+  padding-right: calc(50% + 30px);
+  text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+  padding-left: calc(50% + 30px);
+}
+
+.timeline-dot {
+  height: 16px;
+  width: 16px;
+  background-color: #eaa023;
+  position: absolute;
+  left: calc(50% - 8px);
+  border-radius: 50%;
+  top: 10px;
+}
+
+.timeline-title {
+  font-size: 20px;
+  color: #eaa023;
+  font-weight: bold;
+  margin: 6px 0px 15px;
+}
+
+.timeline-content {
+  background-color: #f4f5f8;
+  padding: 15px;
+  border-style: solid;
+  border-color: gray;
+  border-radius: 8px;
+}
+
+.timeline-content h3 {
+  font-size: 20px;
+  color: black;
+  margin: 0 0 15px;
+}
+.timeline-content p {
+  font-size: 16px;
+  color: black;
+  line-height: 22px;
+}
+
+// ------ RESPONSIVE CSS ------ //
+
+@media (max-width: 767px) {
+  .timeline-items::before {
+    left: 7px;
+  }
+  .timeline-item:nth-child(odd) {
+    padding-right: 0;
+    text-align: left;
+  }
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even) {
+    padding-left: 30px;
+  }
+  .timeline-dot {
+    left: 0;
+  }
+}
