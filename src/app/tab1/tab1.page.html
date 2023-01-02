@@ -37,6 +37,14 @@
         <ng-template>
           <ion-content class="ion-padding">
             <h1>Who am i?</h1>
+            <ion-button
+              (click)="setOpen(false)"
+              size="large"
+              expand="block"
+              color="green"
+              class="backbtn"
+              >{{ 'close' | translate }}
+            </ion-button>
           </ion-content>
         </ng-template>
       </ion-modal>
