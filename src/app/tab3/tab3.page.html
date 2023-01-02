@@ -19,15 +19,17 @@
   </ion-row>
   <ion-card-content>
     <ion-item class="ion-margin-bottom">
-      <ion-label position="stacked"><b>{{ 'name' | translate }}</b></ion-label>
+      <ion-label class="mylabel" position="stacked"
+        ><b>{{ 'name' | translate }}</b></ion-label
+      >
       <ion-input placeholder="{{ 'yourName' | translate }}"></ion-input>
     </ion-item>
     <ion-item class="ion-margin-top ion-margin-bottom">
-      <ion-label position="stacked"><b>Email:</b></ion-label>
+      <ion-label class="mylabel" position="stacked"><b>Email:</b></ion-label>
       <ion-input placeholder="{{ 'yourEmail' | translate }}"></ion-input>
     </ion-item>
     <ion-item class="ion-margin-top ion-margin-bottom">
-      <ion-label position="stacked"
+      <ion-label class="mylabel" position="stacked"
         ><b>{{ 'message' | translate }}</b></ion-label
       >
       <ion-textarea
@@ -43,7 +45,7 @@
         ><ion-button
           size="large"
           expand="block"
-          color="dark"
+          color="green"
           class="infobtn"
           cursor="pointer"
           (click)="setOpen(true)"

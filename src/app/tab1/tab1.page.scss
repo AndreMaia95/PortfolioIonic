@@ -8,9 +8,16 @@ ion-img::part(image) {
 }
 
 .infobtn {
+  width: 340px;
   margin-top: 30px;
-  background-color: #1694a2;
+  //background-color: #1694a2;
   border-radius: 10px;
+}
+
+.info-mebtn {
+  width: 30px;
+  height: 30px;
+  background-color: #1694a2;
 }
 
 .avatar-me {

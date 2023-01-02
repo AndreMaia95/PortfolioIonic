@@ -25,7 +25,21 @@
     ></ion-img>
     <ion-card-header>
       <ion-card-title> {{ me?.info?.name }} </ion-card-title
-      ><ion-icon name="information-circle-outline"></ion-icon>
+      ><ion-button
+        size="small"
+        color="green"
+        fill="clear"
+        class="info-mebtn3"
+        (click)="setOpen(true)"
+        ><ion-icon name="information-circle-outline"></ion-icon
+      ></ion-button>
+      <ion-modal [isOpen]="isModalOpen">
+        <ng-template>
+          <ion-content class="ion-padding">
+            <h1>Who am i?</h1>
+          </ion-content>
+        </ng-template>
+      </ion-modal>
     </ion-card-header>
     <ion-card-content class="ion-margin-horizontal">
       <ion-card-subtitle class="ion-border"
@@ -76,7 +90,7 @@
         routerLink="/tab2"
         size="large"
         expand="block"
-        color="clear"
+        color="green"
         class="infobtn"
         href="#"
         >{{ 'moreInformation' | translate }}
