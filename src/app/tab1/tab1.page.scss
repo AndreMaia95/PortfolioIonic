@@ -9,6 +9,8 @@ ion-img::part(image) {
 
 .infobtn {
   margin-top: 30px;
+  background-color: #1694a2;
+  border-radius: 10px;
 }
 
 .avatar-me {
@@ -48,4 +50,14 @@ ion-toggle {
   position: absolute;
   top: 33rem;
   left: 19rem;
+}
+
+ion-card-header {
+  display: flex;
+}
+
+ion-card-header ion-icon {
+  font-size: 25px;
+  margin-left: 10px;
+  cursor: pointer;
 }
