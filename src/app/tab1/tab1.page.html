@@ -36,7 +36,17 @@
       <ion-modal [isOpen]="isModalOpen">
         <ng-template>
           <ion-content class="ion-padding">
-            <h1>Who am i?</h1>
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>Who am i?</ion-card-title>
+              </ion-card-header>
+
+              <ion-card-content>
+                I'm a 20 years old web developer from Portugal living in Póvoa
+                de Varzim. I'm currently studying Web Development at Instituto
+                Politécnico de Viana do Castelo.
+              </ion-card-content>
+            </ion-card>
             <ion-button
               (click)="setOpen(false)"
               size="large"
