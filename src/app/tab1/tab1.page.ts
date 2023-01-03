@@ -18,7 +18,7 @@ export class Tab1Page {
     private translateService: TranslateService,
     private toastController: ToastController,
     private LocalizationService: LocalizationService,
-    private http: HttpClient
+    private http: HttpClient,
   ) {}
 
   async ngOnInit() {

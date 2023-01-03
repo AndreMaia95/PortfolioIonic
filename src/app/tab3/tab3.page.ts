@@ -5,6 +5,8 @@ import { Preferences } from '@capacitor/preferences';
 import { ToastController } from '@ionic/angular';
 import { firstValueFrom } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
+import { NavController } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tab3',
@@ -17,8 +19,17 @@ export class Tab3Page {
     private translateService: TranslateService,
     private toastController: ToastController,
     private LocalizationService: LocalizationService,
-    private http: HttpClient
+    private http: HttpClient,
+    private navController: NavController,
+    private router: Router
   ) {}
+
+  async goBack() {
+    this.navController.setDirection('back');
+    await this.router.navigate(['/tab2'], {
+      replaceUrl: true,
+    });
+  }
 
   async ngOnInit() {
     this.me = await firstValueFrom(

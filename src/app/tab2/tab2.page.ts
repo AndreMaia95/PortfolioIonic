@@ -5,6 +5,8 @@ import { HttpClient } from '@angular/common/http';
 import { LocalizationService } from './../services/localization/localization.service';
 import { Preferences } from '@capacitor/preferences';
 import { TranslateService } from '@ngx-translate/core';
+import { NavController } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tab2',
@@ -18,8 +20,17 @@ export class Tab2Page {
     private translateService: TranslateService,
     private toastController: ToastController,
     private LocalizationService: LocalizationService,
-    private http: HttpClient
+    private http: HttpClient,
+    private navController: NavController,
+    private router: Router
   ) {}
+
+  async goBack() {
+    this.navController.setDirection('back');
+    await this.router.navigate(['/'], {
+      replaceUrl: true,
+    });
+  }
 
   async ngOnInit() {
     this.me = await firstValueFrom(
