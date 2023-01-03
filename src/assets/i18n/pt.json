@@ -11,5 +11,11 @@
   "yourEmail": "Email",
   "yourMessage": "Mensagem",
   "sendMessage": "Enviar Mensagem",
-  "messageSent": "Mensagem Enviada"
+  "messageSent": "Mensagem Enviada",
+  "contacts": "Contactos",
+  "languages": "Linguagens",
+  "education": "Educação",
+  "experience": "Experiência",
+  "skills": "Habilidades",
+  "someofmyprojects": "Alguns dos meus projetos!"
 }
