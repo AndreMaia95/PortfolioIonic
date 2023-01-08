@@ -53,8 +53,22 @@ export class Tab2Page {
   }
 
   isModalOpen = false;
-
   setOpen(isOpen: boolean) {
     this.isModalOpen = isOpen;
+  }
+
+  isModalOpen2 = false;
+  setOpen2(isOpen: boolean) {
+    this.isModalOpen2 = isOpen;
+  }
+
+  isModalOpen3 = false;
+  setOpen3(isOpen: boolean) {
+    this.isModalOpen3 = isOpen;
+  }
+
+  isModalOpen4 = false;
+  setOpen4(isOpen: boolean) {
+    this.isModalOpen4 = isOpen;
   }
 }

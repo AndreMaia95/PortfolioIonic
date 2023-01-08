@@ -110,7 +110,7 @@
       </div>
     </div>
   </div>
-  <ion-row>
+  <ion-row class="awdaw">
     <ion-col size="12" class="ion-text-center">
       <ion-card>
         <ion-card-header class="ion-margin-bottom">
@@ -124,7 +124,8 @@
               expand="block"
               color="light"
               cursor="pointer"
-              (click)="setOpen(true)"
+              href="https://andremaia95.github.io/SnakeGame/"
+              target="_blank"
             >
               <ion-icon
                 class="projectIcon"
@@ -137,7 +138,8 @@
               expand="block"
               color="light"
               cursor="pointer"
-              (click)="setOpen(true)"
+              href="https://github.com/AndreMaia95/Improving/tree/main/Watch"
+              target="_blank"
             >
               <ion-icon class="projectIcon" name="time-outline"></ion-icon
             ></ion-button>
@@ -149,7 +151,8 @@
               expand="block"
               color="light"
               cursor="pointer"
-              (click)="setOpen(true)"
+              href="https://github.com/AndreMaia95/Improving/tree/main/Hamburguer_Menu"
+              target="_blank"
             >
               <ion-icon class="projectIcon" name="menu-outline"></ion-icon
             ></ion-button>
@@ -159,7 +162,8 @@
               expand="block"
               color="light"
               cursor="pointer"
-              (click)="setOpen(true)"
+              href="https://github.com/AndreMaia95/Improving/tree/main/PhoneMenu"
+              target="_blank"
             >
               <ion-icon
                 class="projectIcon"
@@ -167,29 +171,6 @@
               ></ion-icon
             ></ion-button>
           </div>
-
-          <ion-modal [isOpen]="isModalOpen">
-            <ng-template>
-              <ion-header> </ion-header>
-              <ion-content class="ion-padding">
-                <h1 class="ion-text-center">Snake Game</h1>
-                <p>
-                  This game was created using the Javascript programming
-                  language. The game is hosted on Github and anyone can play it
-                  accessing my Github Profile or by clicking on this link:
-                  "https://andremaia95.github.io/SnakeGame/".
-                </p>
-                <ion-button
-                  (click)="setOpen(false)"
-                  size="large"
-                  expand="block"
-                  color="green"
-                  class="backbtn"
-                  >{{ 'close' | translate }}
-                </ion-button>
-              </ion-content>
-            </ng-template>
-          </ion-modal>
         </ion-card-content>
       </ion-card>
     </ion-col>
