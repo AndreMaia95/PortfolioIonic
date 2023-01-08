@@ -18,7 +18,7 @@ export class Tab1Page {
     private translateService: TranslateService,
     private toastController: ToastController,
     private LocalizationService: LocalizationService,
-    private http: HttpClient,
+    private http: HttpClient
   ) {}
 
   async ngOnInit() {
@@ -45,5 +45,14 @@ export class Tab1Page {
 
   setOpen(isOpen: boolean) {
     this.isModalOpen = isOpen;
+  }
+
+  toggleTheme(event: any) {
+    console.log(event);
+    if (event.detail.checked) {
+      document.body.setAttribute('color-theme', 'dark');
+    } else {
+      document.body.setAttribute('color-theme', 'light');
+    }
   }
 }

@@ -139,5 +139,9 @@
       </ion-button>
     </ion-card-content>
   </ion-card>
-  <ion-toggle color="medium" [enableOnOffLabels]="true"></ion-toggle>
+  <ion-toggle
+    (ionChange)="toggleTheme($event)"
+    color="medium"
+    [enableOnOffLabels]="true"
+  ></ion-toggle>
 </ion-content>
