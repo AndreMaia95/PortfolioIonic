@@ -118,18 +118,31 @@
         </ion-card-header>
 
         <ion-card-content>
-          <ion-button
-            class="snakecss"
-            expand="block"
-            color="light"
-            cursor="pointer"
-            (click)="setOpen(true)"
-          >
-            <ion-icon
-              class="projectIcon"
-              name="game-controller-outline"
-            ></ion-icon
-          ></ion-button>
+          <div class="row-projects">
+            <ion-button
+              class="projectbutton"
+              expand="block"
+              color="light"
+              cursor="pointer"
+              (click)="setOpen(true)"
+            >
+              <ion-icon
+                class="projectIcon"
+                name="game-controller-outline"
+              ></ion-icon
+            ></ion-button>
+
+            <ion-button
+              class="projectbutton"
+              expand="block"
+              color="light"
+              cursor="pointer"
+              (click)="setOpen(true)"
+            >
+              <ion-icon class="projectIcon" name="time-outline"></ion-icon
+            ></ion-button>
+          </div>
+
           <ion-modal [isOpen]="isModalOpen">
             <ng-template>
               <ion-header> </ion-header>

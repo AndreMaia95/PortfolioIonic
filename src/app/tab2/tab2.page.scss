@@ -1,9 +1,15 @@
-.snakecss {
+.projectbutton {
   margin: 0;
-  width: 110px;
-  height: 110px;
+  width: 130px;
+  height: 130px;
   border-radius: 10px;
   border: 3px solid var(--ion-color-green);
+}
+
+.row-projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .projectIcon {
