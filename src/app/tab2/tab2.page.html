@@ -40,13 +40,13 @@
         </div>
         <div class="timeline-content">
           <h3>Phone Number</h3>
-          <p>913380945</p>
+          <p>{{ me?.contacts[0].contactNumber }}</p>
         </div>
       </div>
       <div class="timeline-item">
         <div class="timeline-content">
           <h3>Email</h3>
-          <p>andre.maia@ipvc.pt</p>
+          <p>{{ me?.contacts[1].contactEmail }}</p>
         </div>
       </div>
       <div class="timeline-item">
@@ -54,31 +54,37 @@
         <div class="timeline-title">{{ 'languages' | translate }}</div>
         <div class="timeline-content">
           <h3>Portuguese | English</h3>
-          <p>Native | Good</p>
+          <p>
+            {{ me?.languages[0].levelPortuguese }} | {{
+            me?.languages[1].levelEnglish }}
+          </p>
         </div>
       </div>
       <div class="timeline-item">
         <div class="timeline-dot"></div>
         <div class="timeline-title">{{ 'education' | translate }}</div>
         <div class="timeline-content">
-          <h3>Escola Secundária de Rocha Peixoto</h3>
-          <p>2018-2021</p>
-          <p>IT Management Course | Grade</p>
+          <h3>{{ me?.education[0].school }}</h3>
+          <p>{{ me?.education[0].startAt }} - {{ me?.education[0].endAt }}</p>
+          <p>{{ me?.education[0].course }} | {{ me?.education[0].grade }}</p>
         </div>
       </div>
       <div class="timeline-item">
         <div class="timeline-content">
-          <h3>Escola Superior de Tecnologia e Gestão</h3>
-          <p>2021-2023</p>
-          <p>Web Development and Multimedia</p>
+          <h3>{{ me?.education[1].school }}</h3>
+          <p>{{ me?.education[1].startAt }} - {{ me?.education[1].endAt }}</p>
+          <p>{{ me?.education[1].course }}</p>
         </div>
       </div>
       <div class="timeline-item">
         <div class="timeline-dot"></div>
         <div class="timeline-title">{{ 'experience' | translate }}</div>
         <div class="timeline-content">
-          <h3>1Elemento-Programação Informática,Lda</h3>
-          <p>6 Months | 2020-2021</p>
+          <h3>{{ me?.experience.company }}</h3>
+          <p>
+            {{ me?.experience.time }} | {{ me?.experience.startAt }}-{{
+            me?.experience.endAt }}
+          </p>
         </div>
       </div>
       <div class="timeline-item">
@@ -94,8 +100,11 @@
             ><ion-icon size="large" name="logo-angular"></ion-icon>
           </p>
           <p>
-            React, Html, Css, Java, C#, Javascript, Figma, Photoshop,
-            Illustrator, Angular .
+            {{ me?.skills[0].React }}, {{ me?.skills[0].Html }}, {{
+            me?.skills[0].Css }}, {{ me?.skills[0].Java }}, {{
+            me?.skills[0].Csharp }}, {{ me?.skills[0].Javascript }}, {{
+            me?.skills[0].Figma }}, {{ me?.skills[0].Photoshop }}, {{
+            me?.skills[0].Illustrator }}, {{ me?.skills[0].Angular }} .
           </p>
         </div>
       </div>
@@ -115,20 +124,31 @@
             color="light"
             cursor="pointer"
             (click)="setOpen(true)"
-            >SnakeGame</ion-button
           >
+            <ion-icon
+              class="projectIcon"
+              name="game-controller-outline"
+            ></ion-icon
+          ></ion-button>
           <ion-modal [isOpen]="isModalOpen">
             <ng-template>
-              <ion-header>
-                <ion-toolbar>
-                  <ion-title>SnakeGame</ion-title>
-                  <ion-buttons slot="end">
-                    <ion-button (click)="setOpen(false)">Close</ion-button>
-                  </ion-buttons>
-                </ion-toolbar>
-              </ion-header>
+              <ion-header> </ion-header>
               <ion-content class="ion-padding">
-                <p>Projeto1</p>
+                <h1 class="ion-text-center">Snake Game</h1>
+                <p>
+                  This game was created using the Javascript programming
+                  language. The game is hosted on Github and anyone can play it
+                  accessing my Github Profile or by clicking on this link:
+                  "https://andremaia95.github.io/SnakeGame/".
+                </p>
+                <ion-button
+                  (click)="setOpen(false)"
+                  size="large"
+                  expand="block"
+                  color="green"
+                  class="backbtn"
+                  >{{ 'close' | translate }}
+                </ion-button>
               </ion-content>
             </ng-template>
           </ion-modal>
